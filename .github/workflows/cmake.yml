@@ -31,7 +31,10 @@ jobs:
       run: git submodule update --init --recursive
       
     - name: Installing Libaries
-      run: sudo apt install libxcursor-dev libx11-dev libinput-dev libxcb-xinput-dev libx11-xcb-dev libinput10 libinput-bin libinput-tools
+      run: |
+        sudo apt update
+        sudo apt install libxcursor-dev libx11-dev libinput-dev libxcb-xinput-dev libx11-xcb-dev libinput10 libinput-bin libinput-tools
+      
       
     - name: Configure CMake
       # Use a bash shell so we can use the same syntax for environment variable
