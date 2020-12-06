@@ -30,6 +30,9 @@ jobs:
     - name: Git Recursive Stuff
       run: git submodule update --init --recursive
       
+    - name: Installing Libaries
+      run: sudo apt install libxcursor-dev
+      
     - name: Configure CMake
       # Use a bash shell so we can use the same syntax for environment variable
       # access regardless of the host operating system
