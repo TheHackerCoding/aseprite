@@ -33,7 +33,7 @@ jobs:
     - name: Installing Libaries
       run: |
         sudo apt update
-        sudo apt install libxcursor-dev libx11-dev libinput-dev libxcb-xinput-dev libx11-xcb-dev libinput10 libinput-bin libinput-tools
+        sudo apt install libxcursor-dev libx11-dev libinput-dev libxcb-xinput-dev libx11-xcb-dev libinput10 libinput-bin libinput-tools libxi-dev
       
       
     - name: Configure CMake
